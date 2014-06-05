@@ -21,6 +21,7 @@ scoreOneFile <- function(pwms, fastaFile) {
         scores <-scoreOnePwm(pwms[[i]], ms, mm)
         maxScores <- updateMaxScores(maxScores, scores)
     }
+    maxScores
 }
 
 scoreOnePwm <- function(pwm, ms, mm) {
